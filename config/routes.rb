@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get "about-us", to: "about#index", as: :about
   # Defines the root path route ("/")
   # root "articles"
+  get "sign_up", to: "registrations#new"
   root to: "main#index"
   end
